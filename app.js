@@ -110,9 +110,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-  var total = testArray[0];
+  var total = 1;
   for (var i = 0; i < testArray.length; i++) {
-    total = multiply(total, testArray[i][0]);
+    total = multiply(total, testArray[i])[0];
   }
   var string1 = ('The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + total + '.');
   console.log('Answer5',total, string1);
